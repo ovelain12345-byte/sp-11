@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	int b;
+	int c;
+	setlocale(0, "");
+	cout << "[+] Программа - “Геометрические фигуры”\n\n\n";
+	cout << "[ 1 ] Линия\n";
+	cout << "[ + ] Выберите фигуру:";
+	cin >> a;
+	system("cls");
+	switch (a) {
+	case 1:
+		cout << "[ 1 ] Горизонтальная\n";
+		cout << "[ 2 ] Вертикальная\n";
+		cout << "[ + ] Выберите тип:";
+		cin >> b;
+		system("cls");
+		switch (b) {
+		case 1:
+			cout << "[ + ] Длина линии: ";
+			cin >> c;
+		default:
+			return 0;
+			while (b < 0) {
+				cout << "# ";
+			}
+		case 2:
+			while (b < 0) {
+				cout << "#\n";
+			}
+		default:
+			return 0;
+		}
+	case 2:
+		return 0;
+	}
+}
