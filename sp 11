@@ -14,12 +14,15 @@ int main() {
 			cin >> line;
 			system("cls");
 			if (line == 1) {
-				cout << "Сколько";
+				cout << "Сколько: ";
 				int liner;
 				cin >> liner;
+				cout << "[ + ] Текстура линии: ";
+				char texture;
+				cin >> texture;
 				while (liner > 0)
 				{
-					cout << "# ";
+					cout << texture;
 					liner--;
 				}
 				return 0;
@@ -28,14 +31,18 @@ int main() {
 				cout << "Сколько: ";
 				int liner;
 				cin >> liner;
+				cout << "[ + ] Текстура линии: ";
+				char texture;
+				cin >> texture;
 				while (liner > 0)
 				{
-					cout << "#\n";
+					cout << texture;
+					cout << endl;
 					liner--;
 				}
-					return 0;
+				return 0;
 			}
-			else { 
+			else {
 				return 0;
 			}
 		}
